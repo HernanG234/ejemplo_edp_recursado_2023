@@ -1,5 +1,13 @@
 #!/bin/bash
 
-echo Hola
+function hola {
+	echo Hola
+}
+
+function chau {
+	echo Chau
+}
+
+hola
 echo Como va?
-echo Chau
+chau
