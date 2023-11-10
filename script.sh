@@ -7,7 +7,7 @@ fi
 
 USERNAME=$1
 
-function hola_user {
+function greeting_user {
 	echo Hola $1
 }
 
@@ -15,6 +15,6 @@ function chau_user {
 	echo Chau $1
 }
 
-hola_user $USERNAME
+greeting_user $USERNAME
 echo Como va?
 chau_user $USERNAME
