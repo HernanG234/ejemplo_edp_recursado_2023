@@ -1,17 +1,20 @@
 #!/bin/bash
 
-function hola_user {
-	if [ $# -ne 1 ]; then
-		echo error!
-	fi
+if [ $# -ne 1 ]; then
+	echo error!
+	exit
+fi
 
+USERNAME=$1
+
+function hola_user {
 	echo Hola $1
 }
 
-function chau {
-	echo Chau
+function chau_user {
+	echo Chau $1
 }
 
-hola_user pepe
+hola_user $USERNAME
 echo Como va?
-chau
+chau_user $USERNAME
